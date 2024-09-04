@@ -101,6 +101,9 @@ body {
 /* Portfolio section styles */
 #projects {
     background-image: url(media/earth.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -248,6 +251,10 @@ footer p a:visited {
 
 /* Media Queries */
 @media only screen and (max-width: 1080px) {
+    #projects {
+        height: auto;
+    }
+
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
         padding-left: 10px;
@@ -276,12 +283,20 @@ footer p a:visited {
 }
 
 @media only screen and (max-width: 800px) {
+    #projects {
+        height: auto;
+    }
+
     #navbar {
         justify-content: center;
     }
 }
 
-@media only screen and (max-width: 615px) { 
+@media only screen and (max-width: 615px) {
+    #projects {
+        height: auto;
+    }
+    
     html {
         scroll-padding-top: 72.8px;
     }
@@ -310,6 +325,10 @@ footer p a:visited {
 }
 
 @media only screen and (max-width: 603px) {
+    #projects {
+        height: auto;
+    }
+    
     .icon-wrapper {
         padding-top: 1rem;
     }
@@ -317,12 +336,20 @@ footer p a:visited {
 
 
 @media only screen and (max-width: 415px) {
+    #projects {
+        height: auto;
+    }   
+
     #projects-title {
         font-size: 1.5rem;
     }
 }
 
 @media only screen and (max-width: 375px) {
+    #projects {
+        height: auto;
+    }
+
     #contact-section * {
         transform: translateY(20px);
     }
