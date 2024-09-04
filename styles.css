@@ -58,6 +58,9 @@ body {
 /* Welcome section styles */
 #welcome-section {
     background-image: url(media/heaven.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
     height: 100vh;
     display: flex;
     flex-direction: column;
