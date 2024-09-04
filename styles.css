@@ -1,6 +1,6 @@
 :root {
-    --navbar-blue: rgb(25, 25, 207);
-    --navbar-hover-color: rgb(51, 51, 240);
+    --navbar-black: rgb(5, 5, 5);
+    --navbar-hover-color: rgb(25, 25, 25);
     --navbar-click-color: rgb(70, 70, 242);
     --projectTile-gray: rgb(29, 29, 31);
     --contact-section-gray: #DFDFDF;
@@ -17,9 +17,9 @@ body {
 
 /* Navbar styles */
 #navbar {
+    background-color: var(--navbar-black);
     width: 100%;
     display: flex;
-    background-color: var(--navbar-blue);
     position: fixed;
     justify-content: end;
     font-family: 'Poppins', sans-serif;
@@ -57,6 +57,10 @@ body {
 
 /* Welcome section styles */
 #welcome-section {
+    background-image: url(media/heaven.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -65,16 +69,23 @@ body {
     justify-content: center;
 }
 
+#welcome-section h1,
+#welcome-section p {
+    color: black;
+}
+
 .section-heading {
     font-family: 'Raleway', sans-serif;
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 0;
+    color: white;
 }
 
 .section-subheading {
     font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
+    color: white;
 }
 
 .icon-container {
@@ -92,10 +103,14 @@ body {
 
 /* Portfolio section styles */
 #projects {
+    background-image: url(media/earth.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(247, 251, 255);
+    height: 100vh;
 }
 
 #projects-title {
@@ -174,11 +189,11 @@ body {
 
 /* Contact section styles */
 #contact-section {
+    background-image: url(media/hell.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--contact-section-gray);
     height: 100vh;
     text-align: center;
 }
@@ -207,7 +222,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--navbar-blue);
+    background-color: var(--navbar-black);
 }
 
 footer p{
@@ -239,6 +254,10 @@ footer p a:visited {
 
 /* Media Queries */
 @media only screen and (max-width: 1080px) {
+    #projects {
+        height: auto;
+    }
+
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
         padding-left: 10px;
@@ -267,12 +286,20 @@ footer p a:visited {
 }
 
 @media only screen and (max-width: 800px) {
+    #projects {
+        height: auto;
+    }
+
     #navbar {
         justify-content: center;
     }
 }
 
-@media only screen and (max-width: 615px) { 
+@media only screen and (max-width: 615px) {
+    #projects {
+        height: auto;
+    }
+    
     html {
         scroll-padding-top: 72.8px;
     }
@@ -301,6 +328,10 @@ footer p a:visited {
 }
 
 @media only screen and (max-width: 603px) {
+    #projects {
+        height: auto;
+    }
+    
     .icon-wrapper {
         padding-top: 1rem;
     }
@@ -308,12 +339,20 @@ footer p a:visited {
 
 
 @media only screen and (max-width: 415px) {
+    #projects {
+        height: auto;
+    }   
+
     #projects-title {
         font-size: 1.5rem;
     }
 }
 
 @media only screen and (max-width: 375px) {
+    #projects {
+        height: auto;
+    }
+
     #contact-section * {
         transform: translateY(20px);
     }
