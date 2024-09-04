@@ -1,6 +1,6 @@
 :root {
-    --navbar-blue: rgb(25, 25, 207);
-    --navbar-hover-color: rgb(51, 51, 240);
+    --navbar-black: rgb(5, 5, 5);
+    --navbar-hover-color: rgb(25, 25, 25);
     --navbar-click-color: rgb(70, 70, 242);
     --projectTile-gray: rgb(29, 29, 31);
     --contact-section-gray: #DFDFDF;
@@ -17,9 +17,9 @@ body {
 
 /* Navbar styles */
 #navbar {
+    background-color: var(--navbar-black);
     width: 100%;
     display: flex;
-    background-color: var(--navbar-blue);
     position: fixed;
     justify-content: end;
     font-family: 'Poppins', sans-serif;
@@ -57,6 +57,7 @@ body {
 
 /* Welcome section styles */
 #welcome-section {
+    background-image: url(media/heaven.jpg);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -65,16 +66,23 @@ body {
     justify-content: center;
 }
 
+#welcome-section h1,
+#welcome-section p {
+    color: black;
+}
+
 .section-heading {
     font-family: 'Raleway', sans-serif;
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 0;
+    color: white;
 }
 
 .section-subheading {
     font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
+    color: white;
 }
 
 .icon-container {
@@ -92,10 +100,11 @@ body {
 
 /* Portfolio section styles */
 #projects {
+    background-image: url(media/earth.jpg);
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(247, 251, 255);
+    height: 100vh;
 }
 
 #projects-title {
@@ -174,11 +183,11 @@ body {
 
 /* Contact section styles */
 #contact-section {
+    background-image: url(media/hell.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--contact-section-gray);
     height: 100vh;
     text-align: center;
 }
@@ -207,7 +216,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--navbar-blue);
+    background-color: var(--navbar-black);
 }
 
 footer p{
