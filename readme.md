@@ -1,1 +1,1 @@
-The deployed website can be found here: https://github.com/0xRickey/personal-portfolio-webpage
+The deployed website can be found here: https://0xrickey.github.io/personal-portfolio-webpage/
